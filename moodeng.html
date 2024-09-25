@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moo deng</title>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    cursor: url(homecursor.png), auto;
+}
+#cursorImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  width: 32px; /* Adjust size as needed */
+  height: 32px; /* Adjust size as needed */
+}
+
+#cursorStyle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9998;
+}
+
+
+
+        body {
+            margin: 0;
+            color: rgb(40, 31, 26); 
+            font-family: Outfit, sans-serif;
+
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        #home {
+            background: rgb(224, 249, 254); 
+            width: 100%;
+            padding: 78px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+
+        }
+
+        #about {
+            background: rgb(255, 213, 215); 
+            width: 100%;
+            padding: 78px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+           
+        }
+
+        #more {
+            background: rgb(186, 209,181);
+            width: 100%;
+            padding: 78px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        nav{
+            position: fixed;
+            top: 16px;
+            left: 50%;
+            translate: -50%;   
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            text-transform: uppercase; 
+            padding: 16px;
+    
+        }
+        header {
+            text-align: center;
+        }
+
+        #arrow{
+    translate: 0 0;
+    animation: move 1s infinite;
+    animation-direction: alternate;
+    justify-content: center;
+    text-align: center;
+            }
+            @keyframes move{
+    from {
+        translate: 0 -8px;
+    }
+    to {
+        translate: 0 8px;
+    }
+}
+    .text-container {
+  max-width: 800px; 
+}
+           
+            h1 {
+  font-size: 50px;
+  font-weight: bolder;
+
+            }
+    
+        img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+        }
+           img:hover {
+            transform:scale(1.1);
+           }
+
+        .flex-container {
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+            }
+
+    .text-container {
+    margin-left: 15px; 
+    }
+
+
+.column-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#more">more</a>
+      
+    </nav>  
+
+    <section id="home">
+        <div class="content">
+          <div class="flex-container">
+            <img src="wittleface.png">
+            <div class="text-container">
+              <div class="column-align">
+                <h1>this is moo deng!</h1>
+                <p>swipe to learn more about this trending hippo</p>
+              </div>
+              <p id="arrow">⬇</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <section id="about">
+    <div class= "content">
+    <div class= "left">   
+        <div class="flex-container">
+            <img src="eating.png">
+            <div class="text-container">
+                <h1>about</h1>
+                <p> moo deng, a charming baby pygmy hippopotamus from thailand, gained immense popularity after her adorable videos went viral. her playful antics and sassy demeanor while interacting with zoo staff made her an instant sensation.</p>
+                <h3>fun facts</h3>
+                <ul>
+                  <li>"moo deng" means bouncy pig</li>
+                  <li>pygmy hippos are generally found in west africa</li>
+                  <li>pygmy hippos are herbivores mainly eating leaves, grass, and fruits</li>
+                  <li>the picture on the right show moo deng with her mom, jonah </li>
+                  <li>moo deng has two siblings, a sister named moo wan and a brother named moo tun </li>
+                </ul>
+            </div>
+    </div>
+  </section>  
+
+  <section id="more">
+    <div class= "content">
+        <div class= "left">   
+            <div class="flex-container">
+                <img src="media.png">
+                <div class="text-container">
+        <h1> moo deng in the media </h1>
+        <p> moo deng has quickly become a viral sensation, capturing hearts with her adorable antics. numerous companies have seized the opportunity to use her image in humorous memes to promote their brands, including our own university of miami. her popularity has even extended beyond social media, with features in renowned publications like the new york times, forbes, and people.</p>
+        </div>
+    
+  </section>   
+
+
+
+
+
+ <header>
+    <p>created by moo deng enthusiast: noa aviles</p>
+</header>
+</body>
+</html>
