@@ -126,9 +126,7 @@ html{
         object-fit: cover;
         border-radius: 10px;
         }
-           img:hover {
-            transform:scale(1.1);
-           }
+    
 
         .flex-container {
         display: flex; 
@@ -146,6 +144,18 @@ html{
   flex-direction: column;
   align-items: center; 
 }
+
+
+.wittleface-container:hover img {
+  content: url(scream.png);
+}
+
+.eating-container:hover img {
+  content: url(laying.png);
+
+}
+
+
     </style>
 </head>
 <body>
@@ -159,7 +169,9 @@ html{
     <section id="home">
         <div class="content">
           <div class="flex-container">
+            <div class ="image-container wittleface-container">
             <img src="wittleface.png">
+             </div>
             <div class="text-container">
               <div class="column-align">
                 <h1>this is moo deng!</h1>
@@ -175,7 +187,9 @@ html{
     <div class= "content">
     <div class= "left">   
         <div class="flex-container">
+            <div class ="image-container eating-container">
             <img src="eating.png">
+            </div>
             <div class="text-container">
                 <h1>about</h1>
                 <p> moo deng, a charming baby pygmy hippopotamus from thailand, gained immense popularity after her adorable videos went viral. her playful antics and sassy demeanor while interacting with zoo staff made her an instant sensation.</p>
